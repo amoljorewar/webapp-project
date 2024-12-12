@@ -3,12 +3,11 @@
 #ENTRYPOINT java -jar app.jar
 
 # Base image with Tomcat
-FROM tomcat:9
-
-ADD *.war webapp.war
-
+#FROM tomcat:9
+#ADD *.war webapp.war
 # Expose the Tomcat port
-EXPOSE 8080
-
+#EXPOSE 8080
 # Start Tomcat
-CMD ["catalina.sh", "run"]
+#CMD ["catalina.sh", "run"]
+FROM tomcat
+COPY *.war /usr/local/tomcat/webapps/
