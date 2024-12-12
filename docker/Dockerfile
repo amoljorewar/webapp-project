@@ -10,4 +10,4 @@
 # Start Tomcat
 #CMD ["catalina.sh", "run"]
 FROM tomcat
-COPY *.war /usr/local/tomcat/webapps/
+ADD *.war /usr/local/tomcat/webapps/
