@@ -3,7 +3,7 @@
 #ENTRYPOINT java -jar app.jar
 
 # Base image with Tomcat
-FROM tomcat:latest
+FROM tomcat:9
 
 ADD *.war webapp.war
 
