@@ -14,7 +14,7 @@ pipeline {
         stage('Copy Artifact') {
            steps { 
                    bat 'dir'
-		               bat 'copy "target/*.war" "docker/"'
+		               bat 'copy "target/webapp-project.war" "docker/"'
            }
         }
          
