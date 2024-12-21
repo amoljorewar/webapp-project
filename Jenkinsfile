@@ -6,14 +6,14 @@ pipeline {
     stages {      
         stage('Build maven ') {
             steps { 
-                    sh 'dir'      
+                    // sh 'dir'      
                     sh 'mvn  clean install package'
             }
         }
         
         stage('Copy Artifact') {
            steps { 
-                   sh 'dir'
+                  //  sh 'dir'
 		   sh 'copy target/*.war docker'
            }
         }
