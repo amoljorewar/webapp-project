@@ -15,7 +15,7 @@ pipeline {
            steps { 
                    bat 'dir'
 		               bat 'copy target/webapp-project.war C:/ProgramData/Jenkins/.jenkins/workspace/webappCI/docker/'
-'
+
            }
         }
          
