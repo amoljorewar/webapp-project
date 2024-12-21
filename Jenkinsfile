@@ -14,7 +14,7 @@ pipeline {
         stage('Copy Artifact') {
            steps { 
                    bat 'dir'
-		   bat 'xcopy target\*.war docker\ /Y'
+		   bat 'xcopy C:\ProgramData\Jenkins\.jenkins\workspace\webappCI\target\webapp.war docker\ /Y'
            }
         }
          
