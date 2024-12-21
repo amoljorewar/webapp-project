@@ -10,7 +10,7 @@
 <body>
     <div class="card">
         <header>
-            <h1>MY AGE CALCULATOR</h1>
+            <h1>AGE CALCULATOR</h1>
         </header>
 
         <div>
@@ -32,7 +32,7 @@
 
         <button type="button" 
                 onclick="getDOB()">
-            Calculate
+            Calculating
         </button>
         <br />
         <div id="currentAge"></div>
