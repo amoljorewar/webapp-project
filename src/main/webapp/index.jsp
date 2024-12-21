@@ -32,7 +32,7 @@
 
         <button type="button" 
                 onclick="getDOB()">
-            Calculating
+            Calculate
         </button>
         <br />
         <div id="currentAge"></div>
