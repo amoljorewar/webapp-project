@@ -13,8 +13,8 @@ pipeline {
         
         stage('Copy Artifact') {
            steps { 
-                   bat 'dir'
-		               bat 'copy "C:/ProgramData/Jenkins/.jenkins/workspace/webappCI/target/webapp-project.war" "docker"'
+                   bat 'dir target'
+		               bat 'copy "webapp-project.war" "..\docker"'
            }
         }
          
